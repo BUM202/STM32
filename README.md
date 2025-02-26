@@ -28,15 +28,14 @@
 
 Использование:
 
-cpp
-Copy
 // Создание объекта
 SPIFlash flash(csPin);
 
 // Инициализация
-if(!flash.begin()) {
+if(!flash.begin()) 
+    {
     // Обработка ошибки
-}
+    }
 
 // Запись данных
 flash.write(address, dataBuffer, dataLength);
